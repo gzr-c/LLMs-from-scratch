@@ -1,0 +1,114 @@
+/* 简易计算器 - 移动端触屏样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+  background: #f5f6fa;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 520px;
+  margin: 0 auto;
+  background: #f5f6fa;
+}
+
+/* 显示屏 */
+.display-wrap {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #ececf1;
+}
+
+.display {
+  width: 100%;
+  text-align: right;
+  font-size: 52px;
+  font-weight: 300;
+  color: #222222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  direction: rtl; /* 长表达式从右向左显示，始终露出末尾 */
+  transition: font-size 0.12s ease;
+}
+
+.display.error {
+  color: #d32f2f;
+  font-size: 24px;
+  font-weight: 400;
+  direction: ltr;
+}
+
+/* 按键区 */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  padding: 14px;
+  flex: 1.6;
+  min-height: 0;
+}
+
+.key {
+  border: none;
+  border-radius: 16px;
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: filter 0.08s ease, transform 0.05s ease;
+}
+
+.key:active {
+  filter: brightness(0.88);
+  transform: scale(0.97);
+}
+
+.key.digit {
+  background: #ffffff;
+  color: #333333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.key.op {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.key.func {
+  background: #ffe8cc;
+  color: #b45309;
+  font-size: 24px;
+}
+
+.key.equal {
+  background: #4caf50;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.key.zero {
+  grid-column: span 2;
+}

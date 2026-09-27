@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.simplecalc" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>简易计算器</name>
+    <description>
+        简易计算器：支持四则运算、括号、百分比，触屏友好，安卓端可用。
+    </description>
+    <author email="dev@example.com">
+        gzr-c
+    </author>
+    <content src="index.html" />
+
+    <preference name="Orientation" value="portrait" />
+    <preference name="android-minSdkVersion" value="24" />
+    <preference name="android-targetSdkVersion" value="35" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="BackgroundColor" value="#f5f6fa" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>

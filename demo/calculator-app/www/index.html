@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>简易计算器</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <div class="display-wrap">
+    <div id="display" class="display">0</div>
+  </div>
+  <div class="keypad">
+    <button class="key func" data-key="C">C</button>
+    <button class="key func" data-key="BS">⌫</button>
+    <button class="key func" data-key="PM">±</button>
+    <button class="key op" data-key="÷">÷</button>
+
+    <button class="key digit" data-key="7">7</button>
+    <button class="key digit" data-key="8">8</button>
+    <button class="key digit" data-key="9">9</button>
+    <button class="key op" data-key="×">×</button>
+
+    <button class="key digit" data-key="4">4</button>
+    <button class="key digit" data-key="5">5</button>
+    <button class="key digit" data-key="6">6</button>
+    <button class="key op" data-key="−">−</button>
+
+    <button class="key digit" data-key="1">1</button>
+    <button class="key digit" data-key="2">2</button>
+    <button class="key digit" data-key="3">3</button>
+    <button class="key op" data-key="+">+</button>
+
+    <button class="key digit zero" data-key="0">0</button>
+    <button class="key digit" data-key=".">.</button>
+    <button class="key equal" data-key="=">=</button>
+  </div>
+</div>
+<script src="js/core.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
